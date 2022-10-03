@@ -1,0 +1,49 @@
+{
+  "name": "jascha030/package-name",
+  "description": "The LazyIterator class as found in symfony/finder extracted to a composer package.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jascha030",
+      "email": "contact@jaschavanaalst.nl"
+    }
+  ],
+  "keywords": [
+    "PHP",
+    "iterators",
+    "Lazy-Iterator"
+  ],
+  "homepage": "https://github.com/jascha030",
+  "autoload": {
+    "psr-4": {
+      "Jascha030\\Iterator\\Lazy\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Jascha030\\Iterator\\Lazy\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^7.4|^8.0.0|^8.1"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest",
+    "phpunit/phpunit": "^9.5",
+    "friendsofphp/php-cs-fixer": "^3.11"
+  },
+  "suggest": {
+    "symfony/finder": "*"
+  },
+  "scripts": {
+    "phpunit": "phpunit -c .phpunit.xml",
+    "php-cs-fixer": "php-cs-fixer fix --config .php-cs-fixer.php",
+    "test": "@phpunit",
+    "format": "@php-cs-fixer"
+  },
+  "scripts-descriptions": {
+    "test": "Runs phpunit with .phpunit.xml",
+    "format": "Runs php-cs-fixer with .php-cs-fixer.php."
+  }
+}
