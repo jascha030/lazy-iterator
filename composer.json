@@ -1,5 +1,5 @@
 {
-  "name": "jascha030/package-name",
+  "name": "jascha030/lazy-iterator",
   "description": "The LazyIterator class as found in symfony/finder extracted to a composer package.",
   "type": "library",
   "license": "MIT",
